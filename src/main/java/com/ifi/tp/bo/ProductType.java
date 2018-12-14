@@ -5,6 +5,7 @@ public class ProductType {
     private String name;
     private int price;
     private String property;
+    private String sprite;
 
     public int getId() {
         return id;
@@ -36,5 +37,13 @@ public class ProductType {
 
     public void setProperty(String property) {
         this.property = property;
+    }
+
+    public String getSprite() {
+        return sprite;
+    }
+
+    public void setSprite(String sprite) {
+        this.sprite = sprite;
     }
 }
