@@ -64,16 +64,6 @@ public class TrainerApi {
 
             misty.setTeam(List.of(staryu, starmie));
 
-            potion = new Product();
-            potion.setProductId(1);
-            potion.setQuantity(2);
-
-            pokeball = new Product();
-            pokeball.setProductId(2);
-            pokeball.setQuantity(1);
-
-            misty.setInventory(List.of(potion, pokeball));
-
             // save a couple of trainers
             repository.save(ash);
             repository.save(misty);

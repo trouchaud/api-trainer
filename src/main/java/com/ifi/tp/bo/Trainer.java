@@ -1,5 +1,8 @@
 package com.ifi.tp.bo;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -18,6 +21,7 @@ public class Trainer {
     private int money;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<Product> inventory;
 
     public Trainer() {
