@@ -15,6 +15,11 @@ public class Trainer {
     @Lob
     private String picture;
 
+    private int money;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Product> inventory;
+
     public Trainer() {
     }
 
@@ -44,5 +49,21 @@ public class Trainer {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public List<Product> getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(List<Product> inventory) {
+        this.inventory = inventory;
     }
 }

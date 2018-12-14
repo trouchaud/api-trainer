@@ -1,17 +1,22 @@
 package com.ifi.tp.controller;
 
 import com.ifi.tp.bo.Trainer;
+import com.ifi.tp.service.ProductService;
 import com.ifi.tp.service.TrainerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/trainers")
 public class TrainerController {
 
+    @Autowired
     private final TrainerService trainerService;
+    private final ProductService productService;
 
-    TrainerController(TrainerService trainerService){
+    TrainerController(ProductService productService, TrainerService trainerService){
         this.trainerService = trainerService;
+        this.productService = productService;
     }
 
     @GetMapping("")
