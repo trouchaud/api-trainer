@@ -34,7 +34,7 @@ public class TrainerController {
         return this.trainerService.createTrainer(trainer);
     }
 
-    @PutMapping("/{name}")
+    @PutMapping("")
     Trainer updateTrainer(@RequestBody Trainer trainer) {
         return this.trainerService.updateTrainer(trainer);
     }
