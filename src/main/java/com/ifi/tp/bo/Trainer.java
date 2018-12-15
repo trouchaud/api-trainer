@@ -9,6 +9,9 @@ import java.util.List;
 @Entity
 public class Trainer {
 
+    @GeneratedValue
+    private int id;
+
     @Id
     private String name;
 
