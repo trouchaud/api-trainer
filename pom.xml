@@ -9,8 +9,8 @@
     </parent>
 
     <groupId>io.codeka</groupId>
-    <artifactId>tp-04-jpa</artifactId>
-    <name>tp-04-jpa</name>
+    <artifactId>api-trainer</artifactId>
+    <name>api-trainer</name>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 

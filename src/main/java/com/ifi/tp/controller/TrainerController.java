@@ -12,11 +12,9 @@ public class TrainerController {
 
     @Autowired
     private final TrainerService trainerService;
-    private final ProductService productService;
 
-    TrainerController(ProductService productService, TrainerService trainerService){
+    TrainerController(TrainerService trainerService){
         this.trainerService = trainerService;
-        this.productService = productService;
     }
 
     @GetMapping("")

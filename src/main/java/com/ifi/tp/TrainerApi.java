@@ -36,6 +36,11 @@ public class TrainerApi {
             pikachu.setLevel(18);
             pikachu.setHp(53);
 
+            var dodrio = new Pokemon();
+            dodrio.setPokemonNumber(85);
+            dodrio.setLevel(15);
+            dodrio.setHp(49);
+
             ash.setTeam(List.of(pikachu));
 
             var potion = new Product();
