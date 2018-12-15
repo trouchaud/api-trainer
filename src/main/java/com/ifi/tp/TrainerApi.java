@@ -34,7 +34,7 @@ public class TrainerApi {
             var pikachu = new Pokemon();
             pikachu.setPokemonNumber(25);
             pikachu.setLevel(18);
-            pikachu.setHp(35);
+            pikachu.setHp(53);
 
             ash.setTeam(List.of(pikachu));
 
@@ -60,7 +60,7 @@ public class TrainerApi {
             var starmie = new Pokemon();
             starmie.setPokemonNumber(121);
             starmie.setLevel(21);
-            starmie.setHp(45);
+            starmie.setHp(66);
 
             misty.setTeam(List.of(staryu, starmie));
 
