@@ -9,9 +9,6 @@ import java.util.List;
 @Entity
 public class Trainer {
 
-    @GeneratedValue
-    private int id;
-
     @Id
     private String name;
 
@@ -32,14 +29,6 @@ public class Trainer {
 
     public Trainer(String name) {
         this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
