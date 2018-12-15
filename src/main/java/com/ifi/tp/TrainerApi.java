@@ -41,7 +41,7 @@ public class TrainerApi {
             dodrio.setLevel(15);
             dodrio.setHp(49);
 
-            ash.setTeam(List.of(pikachu));
+            ash.setTeam(List.of(pikachu, dodrio));
 
             var potion = new Product();
             potion.setProductId(1);
