@@ -72,11 +72,11 @@ public class TrainerApi {
 
             pierre.setTeam(List.of(squirtle, venomoth));
 
-            var potion = new Product();
+            potion = new Product();
             potion.setProductId(1);
             potion.setQuantity(5);
 
-            var pokeball = new Product();
+            pokeball = new Product();
             pokeball.setProductId(2);
             pokeball.setQuantity(5);
 
