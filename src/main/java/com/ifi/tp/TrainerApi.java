@@ -102,6 +102,7 @@ public class TrainerApi {
             // save a couple of trainers
             repository.save(ash);
             repository.save(misty);
+            repository.save(pierre);
         };
     }
 
